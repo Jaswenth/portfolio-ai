@@ -33,3 +33,18 @@
 @keyframes hero-tag-float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,var(--tag-float-y),0)}}
 @media(max-width:700px){.hero .role-tag{--tag-float-y:-3px}}
 @media(prefers-reduced-motion:reduce){.hero .role-tag{animation:none;transform:none}}
+.skills-section{position:relative;isolation:isolate;overflow:hidden;border:1px solid #e7e7e0}
+.skills-heading{position:absolute;left:28px;right:110px;top:24px;z-index:2;pointer-events:none}
+.skills-heading h2{display:inline-block;background:#fffffc;border-radius:5px;padding:2px 4px;margin:-2px -4px;font-size:24px;line-height:1.1;letter-spacing:-.03em;font-weight:400}
+.skills-heading p{font-size:14px;line-height:1.4;color:#747474;margin-top:8px}
+.skills-section.has-stickers .skills-heading p{visibility:hidden}
+.skills-board{position:absolute;inset:0;display:block;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;color:inherit;text-align:left;cursor:crosshair;touch-action:pan-y pinch-zoom;-webkit-tap-highlight-color:transparent;user-select:none}
+.skills-board:focus-visible{outline:3px solid #4d721a;outline-offset:-5px}
+.skills-stickers{position:absolute;inset:0;pointer-events:none}
+.skill-sticker{position:absolute;width:112px;max-width:none;height:auto;pointer-events:none;transform:translate(-50%,-50%) rotate(var(--sticker-angle));animation:sticker-appear .18s ease-out both}
+.skills-clear{position:absolute;right:18px;top:16px;z-index:3;display:flex;align-items:center;justify-content:center;gap:8px;min-width:76px;min-height:44px;padding:10px;border:0;border-radius:9px;background:#fffffc;color:#527e12;font-size:14px;cursor:pointer}
+.skills-clear:hover:not(:disabled){background:#edf4df}.skills-clear:disabled{color:#92928b;cursor:default;opacity:.6}.skills-clear:focus-visible{outline:3px solid #4d721a;outline-offset:1px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+@keyframes sticker-appear{from{opacity:0;transform:translate(-50%,-50%) rotate(var(--sticker-angle)) scale(.8)}to{opacity:1;transform:translate(-50%,-50%) rotate(var(--sticker-angle)) scale(1)}}
+@media(max-width:700px){.skills-heading{left:18px;right:85px;top:18px}.skills-heading h2{font-size:20px}.skills-heading p{font-size:12px;margin-top:6px}.skills-clear{right:9px;top:9px;min-width:64px;font-size:12px;gap:6px}.skill-sticker{width:78px}}
+@media(prefers-reduced-motion:reduce){.skill-sticker{animation:none}}

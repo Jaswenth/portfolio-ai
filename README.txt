@@ -6,7 +6,7 @@ No installation or build step is required.
 For GitHub Pages, publish this folder’s contents together, retaining .nojekyll.
 
 Pages: index.html, 09-10pm.html, studio2035.html.
-The Skills section is intentionally empty.
+The Skills section places supplied PNG stickers where visitors click or tap. Figma always appears first on a fresh page or after Clear; the other stickers follow in a shuffled cycle. Enter/Space adds a sticker with the keyboard, and Clear resets the board. Its script is skills.js; the PNG copies are in assets/stickers/.
 Mail: jasivaram@asu.edu
 LinkedIn: https://www.linkedin.com/in/jaswenth/
 Behance is hidden.
