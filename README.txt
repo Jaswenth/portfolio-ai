@@ -12,7 +12,7 @@ LinkedIn: https://www.linkedin.com/in/jaswenth/
 Behance is hidden.
 
 Original artwork remains unchanged in the supplied Assets folder.
-Homepage images came from the supplied Figma file.
+The homepage portrait comes from the supplied Figma file. Project previews and the contact photo use full-resolution WebP copies of the supplied Assets/background files: Project1_View.png (Studio2035), Project2_View.png (09:10pm), and Contact_image.JPG. Their image URLs include content versions so returning visitors receive the updated images.
 Funnel Display is bundled locally under the SIL Open Font License; see fonts/OFL.txt.
 
 GitHub Pages: publish the main branch from the repository root.
