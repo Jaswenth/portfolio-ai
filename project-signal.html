@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Project Signal: a 2D Mars rover game proposal about possible microbial life, unreliable AI perception, and the evidence behind a discovery. By Jaswenth Sivaraman.">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Project Signal — Game Proposal · Jaswenth Sivaraman</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/funnel-display-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="signal.css">
+</head>
+<body class="detail-page signal-page">
+<div class="site-shell">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Jaswenth — Home">Jaswenth</a>
+    <nav aria-label="Main navigation"><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></nav>
+  </header>
+  <main id="main">
+  <div class="project-page">
+    <div class="project-topline"><a class="back-link" href="index.html#projects"><span aria-hidden="true">←</span> Back to projects</a><span class="signal-status">Week 01 · Proposal in progress</span></div>
+    <section class="project-heading" aria-labelledby="signal-title">
+      <div><p class="eyebrow">Hallucination / A 2D web game proposal</p><h1 id="signal-title">Project Signal<span class="title-dot">.</span></h1></div>
+      <p class="project-introduction">Find the evidence.<br>Question the signal.<br>A rover searching for life, and an AI that starts seeing what it hopes to find.</p>
+    </section>
+    <figure class="signal-hero">
+      <img src="assets/signal/signal-hero.svg" alt="Original concept illustration: a rover follows waypoints across Mars while a panel contrasts a plain camera observation with an AI reconstruction suggesting colony-like patterns." width="1400" height="800" fetchpriority="high">
+      <figcaption><span>Original concept illustration · The gap between an observation and a prediction.</span><span>Jaswenth Sivaraman · 2026</span></figcaption>
+    </figure>
+    <dl class="signal-facts"><div><dt>Theme</dt><dd>Hallucination</dd></div><div><dt>Format</dt><dd>2D browser game</dd></div><div><dt>Target session</dt><dd>3–5 minutes</dd></div><div><dt>My role</dt><dd>Concept &amp; game design</dd></div></dl>
+    <nav class="signal-nav" aria-label="Proposal sections"><a href="#overview"><span>01</span> Overview</a><a href="#references"><span>02</span> Game studies</a><a href="#research"><span>03</span> Research &amp; AI</a><a href="#concept"><span>04</span> The concept</a><a href="#journey"><span>05</span> Player journey</a><a href="#direction"><span>06</span> Style &amp; sound</a><a href="#plan"><span>07</span> Build plan</a></nav>
+
+    <section class="signal-section" id="overview" aria-labelledby="overview-title">
+      <div class="signal-section-head"><span class="signal-section-number">01 /</span><h2 id="overview-title">A mission to find life.<br>A reason to look twice.</h2></div>
+      <div class="signal-two-col"><p class="signal-lead">Guide a Mars rover through three sampling sites. Decide what is worth collecting—and what the evidence actually says.</p><div><p>Project Signal follows a fictional mission investigating possible microbial life on Mars. As the remote operator, you select waypoints, inspect the rover’s readings, and send findings to Earth.</p><p>Damaged sensor data leaves gaps. The onboard AI fills them with convincing predictions, sometimes turning an ordinary surface into an apparent discovery. Your task is to compare, investigate, and report uncertainty.</p></div></div>
+      <div class="signal-emotion" aria-label="Intended emotional progression"><span>Curiosity</span><span aria-hidden="true">→</span><span>Confidence</span><span aria-hidden="true">→</span><span>Doubt</span><span aria-hidden="true">→</span><span>Careful investigation</span></div>
+      <aside class="signal-note"><p><span class="signal-kicker">Current stage</span>This is the Week 1 concept proposal. The game is planned for Weeks 2–3. Personal case-study observations and the critical AI exchange are still being developed.</p></aside>
+    </section>
+
+    <section class="signal-section" id="references" aria-labelledby="references-title">
+      <div class="signal-section-head"><span class="signal-section-number">02 /</span><h2 id="references-title">Two references.<br>One focused experience.</h2></div>
+      <div class="signal-case-grid">
+        <article class="signal-case">
+          <div class="signal-case-art" aria-hidden="true"><svg viewBox="0 0 450 150" xmlns="http://www.w3.org/2000/svg"><rect width="450" height="150" fill="#e9eee1"/><g fill="none" stroke="#64725a" stroke-width="2"><circle cx="70" cy="74" r="19"/><rect x="148" y="54" width="38" height="38"/><circle cx="280" cy="74" r="19"/><rect x="359" y="54" width="38" height="38"/></g><path d="M203 38h45v72h-45M130 38H85v72h45" fill="none" stroke="#527e12" stroke-width="3"/><circle cx="225" cy="74" r="4" fill="#527e12"/></svg></div>
+          <p class="signal-kicker">Primary browser-game case study</p><h3>We Become<br>What We Behold</h3><p class="signal-credit">Nicky Case · HTML5 · Mouse input</p>
+          <p>I will study how selecting a moment changes its meaning, and how repeated actions develop a short narrative.</p>
+          <p class="signal-adaptation"><strong>For Project Signal:</strong> explore how inspection choices reveal the difference between evidence and interpretation.</p>
+          <a class="text-link" href="https://ncase.itch.io/wbwwb" target="_blank" rel="noopener noreferrer">Play &amp; creator credits <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="signal-case">
+          <div class="signal-case-art" aria-hidden="true"><svg viewBox="0 0 450 150" xmlns="http://www.w3.org/2000/svg"><rect width="450" height="150" fill="#e9d7bd"/><path d="M-20 130C100 130 90 28 220 28S330 128 470 128" fill="none" stroke="#858a6e" stroke-width="45"/><path d="M-20 130C100 130 90 28 220 28S330 128 470 128" fill="none" stroke="#f8f3df" stroke-width="2" stroke-dasharray="10 9"/><g transform="translate(216 27) rotate(5)"><rect x="-13" y="-21" width="26" height="42" rx="6" fill="#a34f35"/><rect x="-9" y="-9" width="18" height="15" rx="3" fill="#e4d5bd"/></g></svg></div>
+          <p class="signal-kicker">Supporting driving-game reference</p><h3>Beach Buggy<br>Racing</h3><p class="signal-credit">Vector Unit · Kart racing</p>
+          <p>My experience playing Beach Buggy Racing provides a starting point for studying route clarity, movement feedback, and anticipation.</p>
+          <p class="signal-adaptation"><strong>For Project Signal:</strong> adapt readable travel and destinations into a slower 2D waypoint system.</p>
+          <a class="text-link" href="https://www.vectorunit.com/beach-buggy-racing/" target="_blank" rel="noopener noreferrer">Official game &amp; credits <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <aside class="signal-note"><p><span class="signal-kicker">Research in progress</span>The study lenses above are intentions, not completed findings. Beach Buggy Racing is a movement reference; click-to-waypoint control is my proposed adaptation. The browser-game case study will come from We Become What We Behold. Illustrations above are original study motifs, not game screenshots.</p></aside>
+      <details class="signal-details"><summary>What I will document from playing</summary><ul><li><strong>Three meaningful moments:</strong> what I saw or heard, expected, did, and understood afterward.</li><li><strong>Five player-action events:</strong> action → game response → player understanding.</li><li><strong>Verified creator sources:</strong> distinguish stated intentions, my observations, and my interpretation.</li><li><strong>Driving observations:</strong> record specific Beach Buggy Racing moments and explain what transfers into the rover experience.</li></ul></details>
+    </section>
+
+    <section class="signal-section" id="research" aria-labelledby="research-title">
+      <div class="signal-section-head"><span class="signal-section-number">03 /</span><h2 id="research-title">Ground the fiction<br>in evidence.</h2></div>
+      <div class="signal-research">
+        <article><h3>Navigation</h3><p>JPL describes rover planners selecting waypoints and autonomous navigation assessing terrain hazards. This informs the map and destination system.</p><a class="signal-source" href="https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-science-laboratory/surface-system-software-and-rover-navigation/" target="_blank" rel="noopener noreferrer">JPL · Rover navigation ↗</a></article>
+        <article><h3>Sampling</h3><p>NASA describes searching deposits that could preserve signs of ancient microbial life, and storing samples for possible future return. Context matters alongside the sample.</p><a class="signal-source" href="https://science.nasa.gov/mission/mars-2020-perseverance/science-objectives/" target="_blank" rel="noopener noreferrer">NASA · Science objectives ↗</a></article>
+        <article><h3>Uncertainty</h3><p>A potential biosignature can have biological or non-biological explanations. A measured feature and a conclusion about life belong in separate parts of the report.</p><a class="signal-source" href="https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/rock-sampled-by-nasas-perseverance-embodies-why-rover-came-to-mars/" target="_blank" rel="noopener noreferrer">NASA · Potential biosignatures ↗</a></article>
+      </div>
+      <div class="signal-critique"><h3>The questions I will bring back to AI</h3><ol><li><strong>Evidence:</strong> does the analysis attribute an intention to the game’s creator without a source?</li><li><strong>Interaction and sensation:</strong> does it miss a response, silence, delay, or visual change that alters the meaning of an action?</li></ol><p>These are questions to investigate, not two gaps already found. After playing, I will challenge the analysis with my observations, save a short selected exchange, and write my own conclusion.</p></div>
+      <aside class="signal-note"><p><span class="signal-kicker">Provisional design decision</span>Let the player inspect the evidence behind a confident AI claim. The case study and discussion will help confirm or revise that decision.</p></aside>
+    </section>
+
+    <section class="signal-section" id="concept" aria-labelledby="concept-title">
+      <div class="signal-section-head"><span class="signal-section-number">04 /</span><h2 id="concept-title">When prediction<br>becomes perception.</h2></div>
+      <blockquote class="signal-statement"><p>The rover starts seeing the Mars the mission hopes to find.</p></blockquote>
+      <div class="signal-two-col"><div><h3>A machine’s hallucination</h3><p>Interference leaves gaps in the sensor feed. The rover’s AI reconstructs missing detail from learned patterns, presenting a plausible prediction as a direct observation.</p><p>A mineral texture resembles a colony. An enhanced image suggests moisture. A confident label makes an incomplete reading feel conclusive.</p><p class="signal-muted">This is a fictional machine-perception failure. The proposal does not claim real Mars rovers behave this way.</p></div><ul class="signal-story-list"><li><strong>The world</strong>A small ancient Martian basin with three investigation sites.</li><li><strong>The player</strong>A remote operator choosing routes, comparing readings, and keeping a sample log.</li><li><strong>The mission</strong>Collect soil and sediment to investigate possible microbial life. Transmit data to Earth; store physical samples for later retrieval.</li><li><strong>The tension</strong>Question the AI’s certainty while staying open to a genuinely useful finding.</li></ul></div>
+    </section>
+
+    <section class="signal-section" id="journey" aria-labelledby="journey-title">
+      <div class="signal-section-head"><span class="signal-section-number">05 /</span><h2 id="journey-title">A small journey.<br>A changing understanding.</h2></div>
+      <div class="signal-loop" aria-label="Main interaction loop"><span>Select waypoint</span><b aria-hidden="true">→</b><span>Travel</span><b aria-hidden="true">→</b><span>Inspect</span><b aria-hidden="true">→</b><span>Collect or skip</span><b aria-hidden="true">→</b><span>Record</span></div>
+      <div class="signal-storyboard">
+        <article class="signal-frame"><img src="assets/signal/storyboard-1.svg" alt="Storyboard: rover surrounded by a contact signal." width="600" height="400" loading="lazy"><div class="signal-frame-copy"><span class="signal-kicker">Opening / Establish contact</span><h3>Meet the mission.</h3><p>Connect to the rover and learn what you are looking for.</p><dl><div><dt>Input</dt><dd>Activate “Establish contact.”</dd></div><div><dt>Feedback → continue</dt><dd>The console opens and highlights the first waypoint.</dd></div></dl></div></article>
+        <article class="signal-frame"><img src="assets/signal/storyboard-2.svg" alt="Storyboard: rover follows a marked route toward the baseline sample site." width="600" height="400" loading="lazy"><div class="signal-frame-copy"><span class="signal-kicker">Stage 01 / Baseline</span><h3>Learn to trust.</h3><p>Visit a clear site where camera and scanner agree.</p><dl><div><dt>Input</dt><dd>Select the waypoint, inspect, and collect.</dd></div><div><dt>Feedback → continue</dt><dd>The reference sample enters the log; the next route opens.</dd></div></dl></div></article>
+        <article class="signal-frame"><img src="assets/signal/storyboard-3.svg" alt="Storyboard: raw mineral texture beside an AI reconstruction showing colony-like shapes, separated by a question mark." width="600" height="400" loading="lazy"><div class="signal-frame-copy"><span class="signal-kicker">Stage 02 / The promising signal</span><h3>Notice the mismatch.</h3><p>The enhanced view suggests more than the readings support.</p><dl><div><dt>Input</dt><dd>Open the raw view and compare the scanner.</dd></div><div><dt>Feedback → continue</dt><dd>Discover the disagreement. Skip, or collect with an uncertainty note.</dd></div></dl></div></article>
+        <article class="signal-frame"><img src="assets/signal/storyboard-4.svg" alt="Storyboard: a targeting reticle around a rock containing a measurable unusual feature." width="600" height="400" loading="lazy"><div class="signal-frame-copy"><span class="signal-kicker">Stage 03 / An uncertain discovery</span><h3>Stay curious.</h3><p>A real unusual feature deserves investigation, even if its origin is unknown.</p><dl><div><dt>Input</dt><dd>Compare the evidence and decide whether to sample.</dd></div><div><dt>Feedback → continue</dt><dd>Record the observation separately from the biological interpretation.</dd></div></dl></div></article>
+        <article class="signal-frame"><img src="assets/signal/storyboard-5.svg" alt="Storyboard: mission report with observations, uncertainty markers, and a transmission arrow." width="600" height="400" loading="lazy"><div class="signal-frame-copy"><span class="signal-kicker">Ending / Signal home</span><h3>Send what you know.</h3><p>Review all three sites, correct unsupported claims, and transmit the report.</p><dl><div><dt>Input</dt><dd>Review conclusions and choose “Transmit.”</dd></div><div><dt>Feedback → continue</dt><dd>An evidence summary shows samples and uncertainty, with options to revise or replay.</dd></div></dl></div></article>
+      </div>
+      <figure class="signal-flowchart" aria-labelledby="flow-title"><h3 id="flow-title">The decision flow</h3><p class="signal-flow-caption">One main interaction, repeated with more demanding evidence.</p><ol><li>Connect<small>Opening</small></li><li>Choose waypoint<small>Travel to a site</small></li><li>Inspect &amp; compare<small>Camera · scanner · AI</small></li><li>Collect or skip<small>Record evidence + uncertainty</small></li><li>Review &amp; transmit<small>After three sites</small></li></ol><figcaption class="signal-flow-repeat">↳ After each site, return to waypoint selection until all three are reviewed. At the ending, revise the report or replay.</figcaption></figure>
+      <aside class="signal-note"><p><span class="signal-kicker">What success means</span>Visit three sites and make claims that match the evidence. Three collected samples are not required. Touch, mouse, and keyboard will reach the same controls; essential clues will be visible with sound off. Storyboard illustrations are original concept sketches, not prototype screenshots.</p></aside>
+    </section>
+
+    <section class="signal-section" id="direction" aria-labelledby="direction-title">
+      <div class="signal-section-head"><span class="signal-section-number">06 /</span><h2 id="direction-title">Quiet terrain.<br>An uneasy signal.</h2></div>
+      <div class="signal-palette" aria-label="Proposed color palette"><div class="signal-swatch" style="--swatch:#a34f35;--swatch-ink:#fff"><span>Mars rust</span><code>#A34F35</code></div><div class="signal-swatch" style="--swatch:#e9d6bd"><span>Sediment</span><code>#E9D6BD</code></div><div class="signal-swatch" style="--swatch:#f8f8f8"><span>Paper</span><code>#F8F8F8</code></div><div class="signal-swatch" style="--swatch:#242c29;--swatch-ink:#fff"><span>Console</span><code>#242C29</code></div><div class="signal-swatch" style="--swatch:#8edbd8"><span>Signal</span><code>#8EDBD8</code></div></div>
+      <div class="signal-style-list">
+        <article><h3>Type &amp; interface</h3><p class="signal-type-sample">Look closer.</p><p class="signal-mono">CAMERA / SCANNER / INTERPRETATION</p><p>Funnel Display connects the proposal to my portfolio. Restrained monospaced labels distinguish readings. A compact map, inspection panel, and sample log keep sources visible.</p></article>
+        <article><h3>Image &amp; composition</h3><p>Simple top-down terrain and a readable rover silhouette give navigation room to breathe. Inspection close-ups carry the detail. JPL’s navigation documentation informs how routes and hazards can be communicated.</p><a class="signal-source" href="https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-science-laboratory/surface-system-software-and-rover-navigation/" target="_blank" rel="noopener noreferrer">Reference · NASA/JPL navigation ↗</a></article>
+        <article><h3>Motion &amp; feedback</h3><p>Short rover travel and a scan sweep confirm actions. A subtle shift or doubled edge suggests unstable reconstruction. Labels and shapes accompany color; reduced-motion settings will be respected.</p><p class="signal-muted">Beach Buggy Racing is the starting point for studying movement feedback; observations still need documenting.</p></article>
+        <article><h3>Sound &amp; silence</h3><p>Optional low ambience, wheel and scan cues, and brief radio interference support the mission. Silence can mark a contradiction. Sound will require an explicit start action and a persistent mute control.</p><p class="signal-muted">Audio references and licensed assets are still to be selected. This direction describes designed sound, not an authentic Mars recording.</p></article>
+      </div>
+      <aside class="signal-note"><p><span class="signal-kicker">Visual credits &amp; next research</span>The rover artwork, study motifs, and five storyboard frames were created for this proposal with Codex as original vector illustrations. Game references are credited above; no game screenshots or audio assets are reproduced. An annotated visual and sound reference board will be added as research develops.</p></aside>
+    </section>
+
+    <section class="signal-section" id="plan" aria-labelledby="plan-title">
+      <div class="signal-section-head"><span class="signal-section-number">07 /</span><h2 id="plan-title">Build small.<br>Test what players understand.</h2></div>
+      <div class="signal-plan">
+        <article class="signal-week"><p class="signal-kicker">Week 02</p><h3>Make the mission playable.</h3><ol><li>Build one complete site: select a waypoint, travel, inspect, sample, and record.</li><li>Extend the loop across three stages with distinct evidence and feedback.</li><li>Add the opening, report review, ending, and replay.</li><li>Integrate first art and sound, with touch and keyboard controls.</li><li>Publish a prototype and check a complete run.</li></ol></article>
+        <article class="signal-week"><p class="signal-kicker">Week 03</p><h3>Observe. Refine. Publish.</h3><ol><li>Invite players to try it, aiming for three testers. Observe before explaining.</li><li>Check waypoint clarity, the first contradiction, and the meaning of the report.</li><li>Test wide and phone screens, keyboard, muted audio, and reduced motion.</li><li>Refine instructions, touch targets, pacing, and feedback using actual findings.</li><li>Publish and verify the full game, assets, links, and restart behavior.</li></ol></article>
+      </div>
+      <div class="signal-scope" aria-label="Proposed prototype scope"><span>One small map</span><span>Three investigation sites</span><span>One sample log</span><span>One report system</span><span>Authored hallucinations</span></div>
+      <aside class="signal-note"><p><span class="signal-kicker">Before the Week 1 submission</span>Complete the personal game observations, five-event analysis, two evidenced AI-analysis gaps, selected exchange, my own conclusion, and credited style/sound references. This page currently presents the working brief; it is not yet the completed research submission.</p></aside>
+      <div class="signal-next"><p>Prepared for the <a class="signal-source" style="font-size:inherit;margin:0" href="https://unibiubiu.github.io/videos-and-reading/hallucination-web-game/" target="_blank" rel="noopener noreferrer">Hallucination · Week 1 assignment</a>. The proposal will develop here as the research progresses.</p><a class="text-link" href="assets/signal/project-signal-brief.md" download>Download the full brief <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div class="project-end"><p>Keep exploring.</p><a href="index.html#projects">Back to projects <span aria-hidden="true">↗</span></a></div>
+  </div>
+  </main>
+  <footer class="site-footer"><div><a class="footer-name" href="index.html">Jaswenth Sivaraman</a><p>Product and Brand Strategist</p></div><div class="footer-links"><a href="mailto:jasivaram@asu.edu">Mail <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jaswenth/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></footer>
+</div>
+</body>
+</html>
